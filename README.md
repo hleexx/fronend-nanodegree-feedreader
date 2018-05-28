@@ -1,48 +1,45 @@
-# Project Overview
+# Feed Reader Testing Overview
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+Udacity gave me a web-based application that reads RSS feeds. The original developer of the application included [Jasmine](http://jasmine.github.io/) to test the application and had already started writing their first test suite, but they moved on to start their own company and forgot to complete testing. So I had the challenge of completing the test suite. This instructional project focuses on practicing the standard of development known as "test-driven development" to ensure that web-based applications pass the tests before releasing it into the hands of users.
 
+## Getting Started
 
-## Why this Project?
+#### Clone the repository
 
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
+1. Navigate to the main page of this repository on GitHub
+2. Under the repository name 'frontend-nanodegree-feedreader', click **Clone** or **Download**
+2.5 You can also head over to [Udacity](http://github.com/udacity/frontend-nanodegree-feedreader) for the original repository
+3. Copy the clone URL from the HTTPs section using the icon to copy
+4. Open your terminal
+5. Change the current working directory to the location where you want the cloned directory to be made
+6. Type `git clone` and then paste the URL that you copied in step 2
+7. Press enter and your clone will be created
+8. You now have a local copy on your computer where you can edit the code
 
-Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
+### Prerequisites
 
+No prerequisites or dependencies needed
 
-## What will I learn?
+### Installing
 
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
+No installation required -- just open `index.html` in your web browser. Explore the application's HTML (**./index.html**), CSS (**./css/style.css**) and JavaScript (**./js/app.js**) to gain an understanding of how it works and then explore the Jasmine spec file in (**./jasmine/spec/feedreader.js**) to complete the test suite.
 
+## Built With
 
-## How will this help my career?
+* [Sublime Text](https://www.sublimetext.com/) - The text editor used
+* [jQuery Library](https://jquery.com/) - Used for selectors
+* [Jasmine](http://jasmine.github.io/) - Used for testing
 
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
+## Authors
 
+* **Udacity** - *Initial work* - [Udacity](https://github.com/udacity)
+* **Hellen Lee** - *Modified work* - [hleexx](https://github.com/hleexx)
 
-# How will I complete this project?
+## License
 
-Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
+No license
 
-1. Take the JavaScript Testing [course](https://www.udacity.com/course/ud549)
-2. Download the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader).
-3. Review the functionality of the application within your browser.
-4. Explore the application's HTML (**./index.html**), CSS (**./css/style.css**) and JavaScript (**./js/app.js**) to gain an understanding of how it works.
-5. Explore the Jasmine spec file in **./jasmine/spec/feedreader.js** and review the [Jasmine documentation](http://jasmine.github.io).
-6. Edit the `allFeeds` variable in **./js/app.js** to make the provided test fail and see how Jasmine visualizes this failure in your application.
-7. Return the `allFeeds` variable to a passing state.
-8. Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
-9. Write a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
-10. Write a new test suite named `"The menu"`.
-11. Write a test that ensures the menu element is hidden by default. You'll have to analyze the HTML and the CSS to determine how we're performing the hiding/showing of the menu element.
-12. Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display when clicked and does it hide when clicked again.
-13. Write a test suite named `"Initial Entries"`.
-14. Write a test that ensures when the `loadFeed` function is called and completes its work, there is at least a single `.entry` element within the `.feed` container.
-15. Write a test suite named `"New Feed Selection"`.
-16. Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
-17. No test should be dependent on the results of another.
-18. Callbacks should be used to ensure that feeds are loaded before they are tested.
-19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
-21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+## Acknowledgments
+
+* Udacity Front-End Web Development Nanodegree - [Web Programming and JS Module](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001)
+* Jasmine - [Jasmine Documentation](http://jasmine.github.io/)
